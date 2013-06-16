@@ -33,4 +33,4 @@ grunt.initConfig({
 ```
 
 ## Release History
-*16.06.2013*: 0.1.0
+**16.06.2013**: 0.1.0

@@ -1,7 +1,7 @@
 {
   "name": "grunt-includejs",
   "description": "include.js is a node preprocessor for including one JavaScript files into another by \"@include\" operator. It's a fork of wepp module.",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "homepage": "https://github.com/alright/grunt-includejs",
   "author": "Eugene Alright <mail@alrightus.com>",
   "license": "MIT",
@@ -11,6 +11,9 @@
   },
   "engines": {
     "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "include.js": "~0.1.0"
   },
   "devDependencies": {
     "grunt-contrib-clean": "~0.4.0",
