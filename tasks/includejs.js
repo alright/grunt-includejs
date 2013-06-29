@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 
 		grunt.util.async.eachSeries(this.files, function(file, next) {
 			var destFile = path.normalize(file.dest);
-			var srcFile = file.src;
+			var srcFile = Array.isArray(file.src) ? file.src[0] : file.src;
 
 			if ( ! grunt.file.exists(srcFile)) {
 				// Warn on invalid source file (if nonull was set).
