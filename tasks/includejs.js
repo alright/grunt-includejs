@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 		var path = require('path');
 		var options = this.options();
 
-		grunt.util.async.eachSeries(this.files, function(file, next) {
+		grunt.util.async.forEachSeries(this.files, function(file, next) {
 			var destFile = path.normalize(file.dest);
 			var srcFile = Array.isArray(file.src) ? file.src[0] : file.src;
 
